@@ -1,16 +1,13 @@
 public class Book {
 
-    private final String author;
+    private final Author author;
     private final String publisherName; // Название
     private int publishingYear; // Год публикации
 
-    public Book(String publisherName, int publishingYear, String author) {
+    public Book(String publisherName, int publishingYear, Author author) {
         this.author = author;
         this.publisherName = publisherName;
         this.publishingYear = publishingYear;
-    }
-    public String getAuthor() {
-        return this.author;
     }
 
     public String getPublisherName() {

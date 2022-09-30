@@ -2,10 +2,10 @@ public class Main {
     public static void main(String[] args) {
 
         Author johnTolkien = new Author("John", "Tolkien");
-        Book theLordOfTheRings = new Book("The Lord of the Rings", 1954, "JohnTolkien");
+        Book theLordOfTheRings = new Book("The Lord of the Rings", 1954, johnTolkien);
 
         Author joanneRowling = new Author("Joanne", "Rowling");
-        Book harryPotter = new Book("Harry Potter", 1997, "JoanneRowling" );
+        Book harryPotter = new Book("Harry Potter", 1997, joanneRowling );
 
 
         System.out.println("theLordOfTheRings.getPublisherName() = " + theLordOfTheRings.getPublisherName() + " " + theLordOfTheRings.getPublishingYear() + " Author- " + johnTolkien.getAuthorName() + " " + johnTolkien.getAuthorSurname());
